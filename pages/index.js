@@ -4,6 +4,7 @@ import CustomBtn from "../components/customBtn/customBtn";
 import Footer from "../components/footer/footer";
 import { css, cx } from "@emotion/css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "../styles/index.css";
 import {
   faArrowLeft,
   faChevronLeft,
@@ -20,6 +21,7 @@ import MailBox from "../components/mailBox";
 import BlogCard from "../components/blogCard";
 import PodcastCarousel from "../components/podcastCarousel";
 import WhereToListen from "../components/whereToListen";
+import Comment from "../components/comment";
 
 export default function Home() {
   const [latestPodcasts, setLatestPodcasts] = useState([]);
@@ -68,7 +70,7 @@ export default function Home() {
         style={{
           display: "grid",
           gridTemplateRows: "auto 1fr auto",
-          minHeight: "90vh",
+          minHeight: "80vh",
           background: "url('./ryan-holloway-XUXx8X4znHU-unsplash 1.png')",
         }}
       >
@@ -79,37 +81,25 @@ export default function Home() {
           }}
         >
           <div class="container h-100">
-            <div className="row mt-5 mt-lg-0 justify-content-center align-items-center h-100">
+            <div className="row  mt-lg-0 justify-content-center align-items-center h-100">
               <div className="col mt-5 mt-lg-0">
                 <div className="row justify-content-center">
                   <div className="col text-center col-12 col-md-8">
-                    <h1
-                      className="mb-5"
-                      className={css`
-                        font-family: Begum Sans;
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 40px;
-                        line-height: 80.5px;
-                        color: #dcd1bf;
-
-                        @(minWidth == 1024px){
-                          font-weight: 700;
-                          font-size: 95px;
-                          line-height: 142.5px;
-                        }
-                      `}
-                    >
-                      Drummersville Podcast
+                    <h1 className="headee">
+                      Drummersville <br />
+                      Podcast
                     </h1>
                     <p
                       className={`mb-5 ${css(`
-                      font-family: Halyard Micro;
-                      font-style: normal;
-                      font-weight: 400;
-                      font-size: 25px;
+                    font-family: Halyard Micro;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 25px;
                       line-height: 45px;
                       color: #ad9f82;
+                      @media (max-width: 425px) {
+                        font-size: 20px;
+                      }
                     `)}`}
                     >
                       Bringing to you inspiring, educating, motivating and
@@ -122,16 +112,17 @@ export default function Home() {
                   <div className="col col-auto">
                     <div>
                       <button
-                        className={`btn py-3  px-4 btn-danger ${css(
-                          `border-radius: 50px`
+                        className={`btn py-3  px-4 btn_value ${css(
+                          `border-radius: 50px; background: #84382b; color: #fff `
                         )}`}
                       >
                         <FontAwesomeIcon
                           icon={faPlay}
-                          color="white"
+                          color="#fff"
                           className="mr-2"
+                          style="margin-right: 1000px; "
                         />
-                        Play latest Podcast
+                        <span className="playPodcast">Play latest Podcast</span>
                       </button>
                     </div>
                   </div>
@@ -164,7 +155,7 @@ export default function Home() {
         data={blogs}
         Card={BlogCard}
       />
-
+      <Comment />
       <div className="my-5">
         <MailBox />
       </div>

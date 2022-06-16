@@ -1,3 +1,28 @@
 div#navbarNav{
     flex-grow: initial;
 }
+.navbar{
+    padding: 1rem;
+}
+.navLogo{
+    text-decoration: none;
+    color: #dcd1bf;
+}
+.navLinks{
+    text-decoration: none;
+    color: #dcd1bf;
+    padding: 0.5rem 1rem ;
+}
+a:hover{
+    font-weight: bold;
+    color: #dcd1bf;
+}
+.mainNav{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px !important;
+    width: 90%;
+    margin: auto;
+}

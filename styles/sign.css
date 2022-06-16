@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito:wght@200&family=Open+Sans:wght@300&family=Overpass:wght@300&display=swap');
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.Main {
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+}
+@media (max-width: 1024px) {
+  .Main {
+    flex-direction: column;
+  }
+}
+.Left {
+  width: 45%;
+  position: relative;
+  background-image: url(/sign2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1024px) {
+  .Left {
+    width: 100%;
+    height: 46em;
+  }
+}
+.leftCap {
+  position: absolute;
+  top: 50%;
+  margin: auto;
+  width: 70%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+.leftCap h1 {
+  font-family: Begum Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 57px;
+  letter-spacing: -0.012em;
+  text-transform: uppercase;
+  color: #dcd1bf;
+}
+.leftCap p {
+  font-family: Halyard Micro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 41px;
+  color: #dcd1bf;
+  opacity: 0.8;
+}
+.leftCap button {
+  background: #84382b;
+  border-radius: 2px;
+  padding: 1em 4em;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+.Right {
+  height: 100vh;
+  width: 55%;
+  position: relative;
+  padding-right: 1em;
+}
+.rightCap {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0%, -50%);
+  width: 100%;
+}
+.rightCap h3 {
+  font-family: 'Noto Serif', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+  color: #84382b;
+}
+.input {
+  display: flex;
+  width: 90%;
+  margin: 1em 0;
+}
+
+.input > div {
+  width: 50%;
+}
+.input > div p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #545454;
+  margin: 0;
+}
+.input > div input {
+  width: 90%;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 0.7em 1em;
+}
+@media (max-width: 1024px) {
+  .Right {
+    width: 100%;
+  }
+  .input {
+    width: 90%;
+  }
+  .input > div input {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .input {
+    flex-direction: column;
+  }
+  .input > div {
+    width: 100%;
+  }
+  .Email input {
+    width: 90% !important;
+  }
+}
+
+.Email {
+  width: 90%;
+}
+.Email p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #545454;
+  margin: 0;
+}
+.Email input {
+  width: 95%;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 0.7em 1em;
+}
+
+.checkbox {
+  margin: 1em 0;
+  display: flex;
+}
+.checkbox > div {
+  margin: auto 1em;
+}
+.checkbox input {
+  background: #84382b;
+  color: #000;
+  width: 30px;
+  margin-right: 10px;
+}
+.checkbox label {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #545454;
+}
+.agree input {
+  margin-right: 10px;
+}
+
+.agree label {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #545454;
+}
+.agree label span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #84382b;
+}
+
+.submit {
+  width: 90%;
+}
+.submit button {
+  background: #84382b;
+  border: 1px solid #84382b;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 90%;
+  padding: 1em 0;
+  margin: 1em 0;
+  color: #fff;
+}
+.submit p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #969696;
+}
+
+.submit p span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #84382b;
+}
+.submit h5 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.2px;
+  color: #545454;
+}
+.submit h5 a {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+  color: #84382b;
+  margin-left: 10px;
+}

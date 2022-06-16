@@ -1,0 +1,22 @@
+.playPodcast {
+  margin: 10px;
+}
+.btn_value:hover {
+  font-weight: bold;
+  color: #dcd1bf;
+}
+.headee {
+  font-family: Begum Sans;
+  font-family: Begum Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 65px;
+  line-height: 80.5px;
+  color: #dcd1bf;
+  margin-top: -3em;
+}
+@media (max-width: 765px) {
+    .headee{
+        font-size: 35px;
+    }
+}

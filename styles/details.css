@@ -1,0 +1,97 @@
+.details {
+  height: 675px;
+  background: #f7eae8;
+  width: 100%;
+  padding: 3em 6em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.detailImg {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details img {
+  width: 722.51px;
+  padding: 0 1.4em;
+  height: 500px;
+}
+
+.detailsCap {
+  width: 50%;
+  height: 100%;
+  padding: 3em;
+}
+.detailsCap p {
+  padding: 1em 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #3e2d1b;
+}
+.detailsCap h2 {
+  width: 50%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #84382b;
+}
+.detailsCap span {
+  width: 392px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 27px;
+  color: #3e2d1b;
+}
+.detailsCap button {
+  background: #84382b;
+  border-radius: 2px;
+  color: #fff;
+  padding: 1em;
+  outline: none;
+  border: none;
+}
+.detailsCap button a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #dcd1bf;
+}
+
+@media (max-width: 1440px) {
+  .detailsCap h2 {
+    width: 80%;
+  }
+  .details {
+    padding: 2em;
+  }
+  .detailsCap {
+    padding: 2em 0 2em 2em;
+  }
+}
+@media (max-width: 970px) {
+  .details {
+    flex-direction: column;
+    height: 100%;
+  }
+  .details img {
+    height: 300px;
+    display: none;
+  }
+  .detailsCap {
+    width: 100%;
+    padding: 2em;
+  }
+}

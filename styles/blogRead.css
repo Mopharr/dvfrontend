@@ -1,0 +1,112 @@
+.mainPage {
+  width: 60%;
+  margin: auto;
+}
+.header {
+  font-family: Begum Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #84382b;
+  width: 70%;
+  margin: 1em 0;
+}
+.mainPage img {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 2em;
+}
+.sub {
+  font-family: Halyard Micro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 37px;
+  color: #3e2d1b;
+}
+.subCap {
+  font-family: Halyard Micro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #3e2d1b;
+}
+
+.view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+}
+.view p {
+  font-family: Halyard Micro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #3e2d1b;
+}
+.but {
+  cursor: pointer;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  margin: 2em 0;
+}
+.comment input {
+  width: 70%;
+  border: none;
+  outline: none;
+  background: #f4f1eb;
+  border-radius: 50px;
+  padding: 1em;
+}
+.comment button {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 27px;
+  color: #84382b;
+}
+@media (max-width: 1024px) {
+  .mainPage {
+    width: 90%;
+  }
+  .header {
+    font-size: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .mainPage {
+    width: 98%;
+  }
+  .header {
+    font-size: 25px;
+  }
+  .sub {
+    font-size: 20px;
+  }
+  .subCap {
+    font-size: 15px;
+  }
+  .view p {
+    font-size: 15px;
+  }
+  .comment{
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .comment input{
+      width: 95%;
+      margin-bottom: 1em;
+  }
+}
