@@ -1,60 +1,59 @@
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./navbar.css";
+import { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FaTimes } from "react-icons/fa"
 
 function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  const change = () => {
+    setOpen((prev) => !prev);
+  };
+
   return (
     <>
       <nav
-        class="navbar navbar-expand-lg navbar-light"
+        className="navbar navbar-expand-lg navbar-light"
         style={{ background: "#3E2D1B!important" }}
       >
-        <div class="mainNav">
-          <a class="navLogo" href="/">
+        <div className="mainNav">
+          <a className="navLogo" href="/">
             Drummersville
           </a>
-          <button
-            class="navbar-toggler py-2"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <FontAwesomeIcon icon={faBars} />
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="navLinks active" aria-current="page" href="/">
+          <div id="navbarNav" className={open ? " navbarr" : "navbarr-a"}>
+            <div className="cancel" onClick={change}>
+              <FaTimes />
+            </div>
+            <ul className="navbarr-nav">
+              <li className="navv-item ss">
+                <a className="navvLinks active" aria-current="page" href="/">
                   Home
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="navLinks" href="/podcast">
+              <li className="navv-item">
+                <a className="navvLinks" href="/podcast">
                   Podcast
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="navLinks" href="/blog">
+              <li className="navv-item">
+                <a className="navvLinks" href="/blog">
                   Blog
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="navLinks" href="#">
+              <li className="navv-item">
+                <a className="navvLinks" href="#">
                   Contact
                 </a>
               </li>
-              <li class="nav-item">
-                <a
-                  class="navLinks"
-                  href="/signup"
-                >
+              <li className="navv-item">
+                <a className="navvLinks" href="/signup">
                   signup
                 </a>
               </li>
             </ul>
+          </div>
+          <div className="hambur" onClick={change}>
+            <GiHamburgerMenu />
           </div>
         </div>
       </nav>

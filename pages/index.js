@@ -72,6 +72,8 @@ export default function Home() {
           gridTemplateRows: "auto 1fr auto",
           minHeight: "80vh",
           background: "url('./ryan-holloway-XUXx8X4znHU-unsplash 1.png')",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover"
         }}
       >
         <div

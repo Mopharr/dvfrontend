@@ -26,7 +26,7 @@ function MailBox() {
             <div
               className={`d-flex mx-auto ${css(`
                    background: #F4F1EB;
-                   padding: 15px 20px;
+                   padding: 15px 10px;
                    border-radius: 50px;
                   `)}`}
             >
@@ -39,13 +39,14 @@ function MailBox() {
                   border: "none",
                   outline: "none",
                   background: "transparent",
+                  width: "80%"
                 }}
               />
-              <div></div>
               <button
                 className={`btn ${css(`
                     color: #84382B;
-                    font-weight: bold
+                    font-weight: bold;
+                    width: 20%
                   `)}`}
               >
                 Subscribe

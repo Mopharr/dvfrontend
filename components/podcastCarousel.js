@@ -6,6 +6,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import { Carousel } from "react-bootstrap";
+import "../styles/comment.module.css";
 
 function PodcastCarousel({ data, Card, title, subtitle }) {
   const [index, setIndex] = useState(0);
@@ -114,7 +115,7 @@ function PodcastCarousel({ data, Card, title, subtitle }) {
             <Carousel.Item>
               <div className="row mt-4 justify-content-center">
                 {data.slice(0, 2).map((data) => (
-                  <div className="col mb-5 mb-md-0 col-12 col-md-6 col-xl-5">
+                  <div className="col mb-5 mb-md-0 col-12 col-md-6 col-xl-5 testing">
                     <Card data={data} />
                   </div>
                 ))}
@@ -125,7 +126,7 @@ function PodcastCarousel({ data, Card, title, subtitle }) {
               <Carousel.Item>
                 <div className="row mt-4 justify-content-center">
                   {data.slice(2, 4).map((data) => (
-                    <div className="col mb-5 mb-md-0 col-12 col-md-6 col-xl-5">
+                    <div className="col mb-5 mb-md-0 col-12 col-md-6 col-xl-5 testing">
                       <Card data={data} />
                     </div>
                   ))}

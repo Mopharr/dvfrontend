@@ -1,28 +1,104 @@
-div#navbarNav{
-    flex-grow: initial;
+div#navbarNav {
+  flex-grow: initial;
 }
-.navbar{
-    padding: 1rem;
+.navbar {
+  padding: 1rem;
 }
-.navLogo{
-    text-decoration: none;
-    color: #dcd1bf;
+.navLogo {
+  text-decoration: none;
+  color: #dcd1bf;
 }
-.navLinks{
-    text-decoration: none;
-    color: #dcd1bf;
-    padding: 0.5rem 1rem ;
+.navLinks {
+  text-decoration: none;
+  color: #dcd1bf;
+  padding: 0.5rem 1rem;
 }
-a:hover{
-    font-weight: bold;
-    color: #dcd1bf;
+a:hover {
+  font-weight: bold;
+  color: #dcd1bf;
 }
-.mainNav{
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: space-between;
-    height: 40px !important;
-    width: 90%;
-    margin: auto;
+.mainNav {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px !important;
+  width: 90%;
+  margin: auto;
+}
+.navbarr-nav {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.navvLinks {
+  text-decoration: none;
+  color: #dcd1bf;
+  padding: 0.5rem 1rem;
+}
+.navLinks:hover {
+  font-weight: bold;
+  color: #dcd1bf;
+}
+.cancel {
+  display: none;
+}
+.hambur{
+  display: none;
+
+}
+
+@media (max-width: 900px) {
+  .navbarr {
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    background: #3e2d1b !important;
+    bottom: 0;
+    z-index: 10;
+    right: 0;
+    padding: 2em 0 0 1em;
+    transition: all 0.4s ease-in-out;
+  }
+  .navbarr-a {
+     height: 100%;
+    width: 400px;
+    position: fixed;
+    background: #3e2d1b !important;
+    bottom: 0;
+    z-index: 10;
+    right: 100%;
+    padding: 2em 0 0 1em;
+    transition: all 0.4s ease-in-out;
+
+}
+
+  .ss {
+    margin-top: 3em;
+  }
+  .navbarr-nav {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 0 2em 0 0;
+  }
+  .navv-item {
+    font-size: 30px;
+    margin-bottom: 3em;
+    text-align: right;
+  }
+  .cancel {
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+  }
+   .hambur {
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+  }
 }
