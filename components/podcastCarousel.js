@@ -55,7 +55,7 @@ function PodcastCarousel({ data, Card, title, subtitle }) {
               <div>
                 <p
                   className={`m-0 text-uppercase ${css(`
-                      font-size: 25px;
+                      font-size: 26px;
                       color: #84382B;
                     `)}`}
                 >

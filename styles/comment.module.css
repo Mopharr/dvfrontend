@@ -7,7 +7,7 @@
   font-family: Begum Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 41px;
   line-height: 72px;
   color: #84382b;
   margin-left: 2em;
@@ -51,7 +51,7 @@
   top: 26%;
   width: 80%;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 25px;
   text-align: center;
   color: #ffffff;
@@ -63,7 +63,7 @@
   transform: translate(-50%, -0%);
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 24px;
   text-align: center;
 }
@@ -76,7 +76,7 @@
   transform: translate(-50%, -0%);
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 24px;
   text-align: center;
   color: #ffffff;
@@ -113,7 +113,7 @@
   top: 26%;
   width: 80%;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 25px;
   text-align: center;
   color: #ffffff;
@@ -125,7 +125,7 @@
   transform: translate(-50%, -0%);
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 24px;
   text-align: center;
   color: #fff;
@@ -139,7 +139,7 @@
   transform: translate(-50%, -0%);
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 16.5px;
   line-height: 24px;
   text-align: center;
   color: #ffffff;
@@ -184,7 +184,7 @@
   }
   .maincomment h1 {
     margin-left: .2em;
-    font-size: 35px;
+    font-size: 36px;
   }
   /* carousel style */
 

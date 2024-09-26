@@ -34,7 +34,7 @@ function PodcastCard({ data }) {
 
       <blockquote
         className={`m-0 mt-3 text-uppercase ${css(`
-              font-size: 25px;
+              font-size: 26px;
               font-family: Begum Sans;
               color: #84382B;
             `)}`}
@@ -50,7 +50,7 @@ function PodcastCard({ data }) {
             font-family: Halyard Micro;
             font-style: normal;
             font-weight: normal;
-            font-size: 18px;
+            font-size: 19px;
             line-height: 32px;
             color: #3E2D1B;
         `)}`}

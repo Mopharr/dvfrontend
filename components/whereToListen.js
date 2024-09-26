@@ -15,7 +15,7 @@ function WhereToListen() {
             <div
               className="col col-12 col-lg-5 col-xl-5 text-center font-weight-bold"
               style={{
-                fontSize: "25px",
+                fontSize: "28px",
                 color: "#84382B",
               }}
             >
@@ -42,7 +42,12 @@ function WhereToListen() {
                 </div>
 
                 <div class="col-auto mt-2">
-                  <a href = '/'><Image style={{width: '100px', height: '100%'}} src="./annn.png" /></a>
+                  <a href="/">
+                    <Image
+                      style={{ width: "100px", height: "100%" }}
+                      src="./annn.png"
+                    />
+                  </a>
                 </div>
               </div>
             </div>

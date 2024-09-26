@@ -1,17 +1,10 @@
 import Head from "next/head";
 import Navbar from "../components/navbar/navbar";
-import CustomBtn from "../components/customBtn/customBtn";
 import Footer from "../components/footer/footer";
 import { css, cx } from "@emotion/css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/index.css";
-import {
-  faArrowLeft,
-  faChevronLeft,
-  faChevronRight,
-  faPlay,
-} from "@fortawesome/free-solid-svg-icons";
-import { Carousel, Image } from "react-bootstrap";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import podcasts from "../utilities/podcasts.json";
 import mockBlogs from "../utilities/blogs.json";
 import { useEffect, useState } from "react";
@@ -73,7 +66,7 @@ export default function Home() {
           minHeight: "80vh",
           background: "url('./ryan-holloway-XUXx8X4znHU-unsplash 1.png')",
           backgroundRepeat: "no-repeat",
-          backgroundSize: "cover"
+          backgroundSize: "cover",
         }}
       >
         <div

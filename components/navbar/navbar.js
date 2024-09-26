@@ -4,11 +4,11 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa"
 
 function Navbar() {
-  const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(false);
 
-  const change = () => {
-    setOpen((prev) => !prev);
-  };
+    const change = () => {
+      setOpen((prev) => !prev);
+    };
 
   return (
     <>

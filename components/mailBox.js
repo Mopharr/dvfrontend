@@ -11,7 +11,7 @@ function MailBox() {
               font-family: Roboto;
               font-style: normal;
               font-weight: bold;
-              font-size: 25px;
+              font-size: 26px;
               line-height: 37px;
               color: #84382B;
                     `)}`}
